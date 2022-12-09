@@ -9,7 +9,7 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch.net
+package com.donex.univvisual.net
 
 import android.util.Log
 import com.drake.net.NetConfig
@@ -19,7 +19,6 @@ import com.drake.net.exception.RequestParamsException
 import com.drake.net.exception.ResponseException
 import com.drake.net.exception.ServerResponseException
 import com.drake.net.request.kType
-import com.showtimer.touch.model.BaseResponseModel
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.serializer
 import okhttp3.Response
@@ -81,7 +80,7 @@ class SerializationConverter(
             Json.serializersModule.serializer(succeed),
             this
         )
-        Log.e("TAG", "parseBody: $data")
+        Log.d("TAG", "parseBody: $data")
         return data as R?
     }
 }

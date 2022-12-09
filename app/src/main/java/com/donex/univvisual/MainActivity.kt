@@ -9,21 +9,15 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch
+package com.donex.univvisual
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
+import com.donex.univvisual.databinding.ActivityMainBinding
 import com.drake.net.Post
 import com.drake.net.utils.scopeNetLife
-import com.showtimer.touch.model.BaseResponseModel
-import com.showtimer.touch.model.test
-import com.showtimer.touch.net.GsonConverter
-import com.showtimer.touch.net.SerializationConverter
-import com.shwotimer.touch.R
-import com.shwotimer.touch.databinding.ActivityMainBinding
-import kotlinx.coroutines.launch
+import com.donex.univvisual.model.test
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

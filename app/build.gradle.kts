@@ -17,12 +17,12 @@ plugins {
 }
 
 android {
-    namespace = "com.shwotimer.touch"
+    namespace = "com.donex.univvisual"
     buildToolsVersion = "32.1.0 rc1"
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "com.shwotimer.touch"
+        applicationId = "com.donex.univvisual"
         minSdk = 21
         targetSdk = 32
         versionCode = 1
@@ -98,4 +98,7 @@ dependencies {
 
     //权限请求框架：https://github.com/getActivity/XXPermissions
     implementation("com.github.getActivity:XXPermissions:16.2")
+
+    //屏幕适配方案 https://github.com/JessYanCoding/AndroidAutoSize
+    implementation("com.github.JessYanCoding:AndroidAutoSize:v1.2.1")
 }

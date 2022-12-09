@@ -9,11 +9,11 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch
+package com.donex.univvisual
 
 import android.app.Application
 import com.rousetime.android_startup.StartupManager
-import com.showtimer.touch.startup.NetStartup
+import com.donex.univvisual.startup.NetStartup
 
 class MainApplication : Application() {
 

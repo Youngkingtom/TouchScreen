@@ -9,7 +9,7 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch
+package com.showtimer.univvisual
 
 import org.junit.Test
 

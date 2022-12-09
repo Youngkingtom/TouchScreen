@@ -9,7 +9,7 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch.net
+package com.donex.univvisual.net
 
 import com.drake.net.convert.JSONConvert
 import com.google.gson.GsonBuilder

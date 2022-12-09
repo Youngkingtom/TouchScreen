@@ -9,7 +9,7 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch.model
+package com.donex.univvisual.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
