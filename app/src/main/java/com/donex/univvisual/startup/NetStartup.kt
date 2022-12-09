@@ -9,18 +9,17 @@
  * ++++++++++++++++++++++++++++++++++++++++++++++++\
  */
 
-package com.showtimer.touch.startup
+package com.donex.univvisual.startup
 
 import android.content.Context
+import com.donex.univvisual.BuildConfig
 import com.drake.net.NetConfig
 import com.drake.net.cookie.PersistentCookieJar
 import com.drake.net.okhttp.setConverter
 import com.drake.net.okhttp.setDebug
 import com.rousetime.android_startup.AndroidStartup
-import com.showtimer.touch.net.GsonConverter
-import com.showtimer.touch.net.HttpLoggingInterceptor
-import com.showtimer.touch.net.SerializationConverter
-import com.shwotimer.touch.BuildConfig
+import com.donex.univvisual.net.HttpLoggingInterceptor
+import com.donex.univvisual.net.SerializationConverter
 import java.util.concurrent.TimeUnit
 
 class NetStartup : AndroidStartup<String>() {
