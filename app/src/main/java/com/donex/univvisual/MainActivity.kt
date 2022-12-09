@@ -18,6 +18,7 @@ import com.donex.univvisual.databinding.ActivityMainBinding
 import com.drake.net.Post
 import com.drake.net.utils.scopeNetLife
 import com.donex.univvisual.model.test
+import com.drake.statusbar.immersive
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        immersive()
         binding.button.setOnClickListener {
             scopeNetLife {
                 val data =

@@ -14,6 +14,9 @@ package com.donex.univvisual
 import android.app.Application
 import com.rousetime.android_startup.StartupManager
 import com.donex.univvisual.startup.NetStartup
+import com.scwang.smart.refresh.footer.ClassicsFooter
+import com.scwang.smart.refresh.header.MaterialHeader
+import com.scwang.smart.refresh.layout.SmartRefreshLayout
 
 class MainApplication : Application() {
 
@@ -24,5 +27,8 @@ class MainApplication : Application() {
             .build(this)
             .start()
             .await()
+
+        SmartRefreshLayout.setDefaultRefreshHeaderCreator { context, layout -> MaterialHeader(this) }
+        SmartRefreshLayout.setDefaultRefreshFooterCreator { context, layout -> ClassicsFooter(this) }
     }
 }

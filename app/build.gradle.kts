@@ -101,4 +101,22 @@ dependencies {
 
     //屏幕适配方案 https://github.com/JessYanCoding/AndroidAutoSize
     implementation("com.github.JessYanCoding:AndroidAutoSize:v1.2.1")
+
+    //RecyclerView框架 https://github.com/liangjingkanji/BRV
+    implementation("com.github.liangjingkanji:BRV:1.3.86")
+
+    //智能下拉刷新框架 https://github.com/scwang90/SmartRefreshLayout
+    implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")      //核心必须依赖
+    implementation("io.github.scwang90:refresh-header-classics:2.0.5")    //经典刷新头
+    implementation("io.github.scwang90:refresh-header-radar:2.0.5")      //雷达刷新头
+    implementation("io.github.scwang90:refresh-header-falsify:2.0.5")     //虚拟刷新头
+    implementation("io.github.scwang90:refresh-header-material:2.0.5")    //谷歌刷新头
+    implementation("io.github.scwang90:refresh-header-two-level:2.0.5")  //二级刷新头
+    implementation("io.github.scwang90:refresh-footer-ball:2.0.5")        //球脉冲加载
+    implementation("io.github.scwang90:refresh-footer-classics:2.0.5")   //经典加载
+
+    //通用透明状态栏 https://github.com/liangjingkanji/StatusBar
+    implementation("com.github.liangjingkanji:StatusBar:2.0.2")
+
+
 }
