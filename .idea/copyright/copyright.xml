@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="/++++++++++++++++++++++++++++++++++++++++++++++++&#10;+ Copyright(c) 2019 - &amp;#36;originalComment.match(&quot;Copyright \(c\) (\d+)&quot;, 1, &quot;-&quot;)&amp;#36;today.year, SHOWTIME&#10;+ 项目名称:&amp;#36;project.name&#10;+ 文件名称:&amp;#36;file.fileName&#10;+ 最近修改时间:&amp;#36;file.lastModified&#10;+ Author:Youngkingdom&#10;+ All rights reserved.&#10;++++++++++++++++++++++++++++++++++++++++++++++++\" />
+    <option name="myName" value="copyright" />
+  </copyright>
+</component>

@@ -1,0 +1,14 @@
+<!--
+  ~ /++++++++++++++++++++++++++++++++++++++++++++++++
+  ~ + Copyright(c) 2019 - 2022, SHOWTIME
+  ~ + 项目名称:TouchScreen
+  ~ + 文件名称:strings.xml
+  ~ + 最近修改时间:2022/12/9 下午2:27
+  ~ + Author:Youngkingdom
+  ~ + All rights reserved.
+  ~ ++++++++++++++++++++++++++++++++++++++++++++++++\
+  -->
+
+<resources>
+    <string name="app_name">Touch</string>
+</resources>
