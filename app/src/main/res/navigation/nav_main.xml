@@ -13,23 +13,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.donex.univvisual.SplashFragment"
-        android:label="SplashFragment" />
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.donex.univvisual.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main">
+        android:name="com.donex.univvisual.ui.fragment.SplashFragment"
+        android:label="SplashFragment">
         <action
-            android:id="@+id/action_mainFragment_to_splashFragment"
-            app:destination="@id/splashFragment"
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.donex.univvisual.ui.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 </navigation>
