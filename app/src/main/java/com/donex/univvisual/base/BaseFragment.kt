@@ -11,22 +11,26 @@
 
 package com.donex.univvisual.base
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
 abstract class BaseFragment<DB : ViewDataBinding> : Fragment() {
     private var _binding: DB? = null
+    var mActivity: AppCompatActivity? = null
     open val binding: DB get() = _binding!!
 
     abstract fun getLayoutId(): Int
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        mActivity = context as AppCompatActivity
     }
 
     override fun onCreateView(
@@ -38,6 +42,13 @@ abstract class BaseFragment<DB : ViewDataBinding> : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initView()
+    }
+
+    abstract fun initView()
 
     override fun onDestroyView() {
         super.onDestroyView()

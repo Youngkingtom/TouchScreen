@@ -11,13 +11,10 @@
 
 package com.donex.univvisual
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.donex.univvisual.databinding.ActivityMainBinding
-import com.drake.net.Post
-import com.drake.net.utils.scopeNetLife
-import com.donex.univvisual.model.test
 import com.drake.statusbar.immersive
 
 class MainActivity : AppCompatActivity() {
@@ -27,13 +24,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         immersive()
-        binding.button.setOnClickListener {
-            scopeNetLife {
-                val data =
-                    Post<test>("touch/appversion/getActive") {
-                    }.await()
-                binding.textView.text = data.description
-            }
-        }
     }
 }

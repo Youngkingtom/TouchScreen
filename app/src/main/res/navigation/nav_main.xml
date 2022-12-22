@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /++++++++++++++++++++++++++++++++++++++++++++++++
+  ~ + Copyright(c) 2019 - 2022, SHOWTIME
+  ~ + 项目名称:TouchScreen
+  ~ + 文件名称:nav_main.xml
+  ~ + 最近修改时间:2022/12/22 下午3:41
+  ~ + Author:Youngkingdom
+  ~ + All rights reserved.
+  ~ ++++++++++++++++++++++++++++++++++++++++++++++++\
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.donex.univvisual.SplashFragment"
+        android:label="SplashFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.donex.univvisual.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>
